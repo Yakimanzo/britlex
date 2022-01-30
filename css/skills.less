@@ -1,0 +1,132 @@
+@import 'vars.less';
+
+// Skills
+
+
+.skills h1{
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wrapper{
+    margin-top: 96px;
+    display: grid;
+    grid-template-columns: repeat(3, 435px);
+    grid-column-gap: 18px;
+    grid-row-gap: 20px;
+    width: 90%;
+    margin: 96px auto;
+}
+
+.box_speak,
+.box_write,
+.box_read,
+.box_listen{
+    background-color: @boxcolor;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 43px;
+
+    & h3{
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    & span{
+        font-size: 16px;
+        font-weight: 400;
+        color: lighten(@black, 40%);
+        margin-top: 15px;
+    }
+}
+
+.box_speak{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    & h3{
+        margin-top: 30px;
+    }
+
+    & #speak_btn{
+        font-size: 18px;
+        padding: 17px 64px;
+        margin-top: 36px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.box_write img{
+    width: 65%;
+    margin-left: 100px;
+
+}
+
+.box_listen{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+}
+
+
+
+.btn{
+    background-color: @brbgcolor;
+    color: @white;
+    font-size: 20px;
+    border-radius: @brradius;
+    font-family: @poppins;
+    border: none;
+    cursor: pointer;
+}
+
+#writing_btn,
+#read_btn,
+#listen_btn{
+    padding: 15px 52px;
+}
+
+#writing_btn, #read_btn, #listen_btn, #speak_btn{
+    border: 1px solid @black;
+
+    &:hover{
+        color: @black;
+        border: 1px solid @black;
+        background-color: transparent;
+        transition-duration: 0.5s;
+        transition-delay: 0.1s;
+    }
+}
+
+
+
+#writing_btn,
+#read_btn{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.box_listen{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    flex-direction: row;
+
+    & img{
+        width: 80%;
+        margin-left: 60px;
+    }
+
+    & h3{
+        margin-top: 40px;
+    }
+
+    & #listen_btn{
+        margin-top: 20px;
+    }
+}

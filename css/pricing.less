@@ -1,0 +1,73 @@
+@import 'vars.less';
+
+// Pricing section
+
+.pricing{
+    margin-top: 100px;
+
+
+    & h1{
+        text-align: center;
+        font-size: 48px;
+        font-weight: 600;
+    }
+}
+
+.pricing_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+    margin: 90px 130px;
+}
+
+.course,
+.classes,
+.tuition{
+    display: flex;
+    flex-direction: column;
+
+    & h2{
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 50px;
+    }
+
+    & span{
+        font-size: 20px;
+        font-weight: 400;
+        color: lighten(@black, 40%);
+        margin-top: 19px;
+    }
+
+    & .price{
+        margin-top: 59px;
+    }
+}
+
+.classes{
+    margin-top: 90px;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: @pricecolor;
+    border-radius: @brradius;
+    width: 240px;
+    padding-left: 18px;
+
+    & h3{
+        font-size: 30px;
+    }
+
+    & p{
+        font-size: 18px;
+        color: lighten(@black, 40%);
+        margin-left: 8px;
+    }
+}
+
+.course .price{
+    margin-top: 29px;
+}

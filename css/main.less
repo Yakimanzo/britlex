@@ -1,0 +1,63 @@
+@import 'vars.less';
+
+// Main section 
+
+.main{
+    display: flex;
+}
+
+
+.starting{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 115px 119px;
+    position: relative;
+
+    & img{
+        position: absolute;
+        width: 85.24px;
+        height: 85.24px;
+        left: 450px;
+        top: 100px;
+    }
+
+    & h1{
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 80px;
+    }
+
+    & span{
+        font-size: 24px;
+        color: lighten(@black, 40%);
+        margin-top: 40px;
+    }
+}
+
+
+
+#started_btn{
+    color: @white;
+    font-size: 36px;
+    padding: 32px 118px;
+    border-radius: @brmainradius;
+    border: none;
+    background-color: @brbgcolor;
+    margin-top: 61px;
+    border: 1px solid @black;
+    cursor: pointer;
+    
+    &:hover{
+        color: @black;
+        border: 1px solid @black;
+        background-color: transparent;
+        transition-duration: 0.5s;
+        transition-delay: 0.1s;
+    }
+}
+
+.learn_image{
+    background: url(../img/learning.png)no-repeat top;
+    width: 50%;
+}

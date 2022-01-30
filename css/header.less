@@ -1,0 +1,67 @@
+// Header
+
+@import 'vars.less';
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: @black;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 57px 129px;
+
+    & span{
+        color: lighten(@black, 50%);
+    }
+}
+
+
+
+.menu{
+    display: flex;
+
+    & a{
+        font-size: 20px;
+        color: @black;
+        font-weight: 500;
+        
+        &:hover{
+            text-shadow: @black 0 0 15px;
+            transition-duration: 0.5s;
+            transition-delay: 0.1s;
+        }
+    }
+    
+    & li+li{
+        margin-left: 36px;
+    }
+
+    & li:nth-child(4){
+        margin-left: 59px;
+    }
+}
+
+
+
+#header_btn{
+    font-size: 24px;
+    color: @black;
+    font-family: @poppins;
+    padding: 17px 57px;
+    border: 2px solid @brcolor;
+    border-radius: @brradius;
+    margin: 72px 188px;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover{
+        color: @white;
+        background-color: @brbgcolor;
+        transition-duration: 0.5s;
+        transition-delay: 0.1s;
+    }
+}
