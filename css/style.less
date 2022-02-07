@@ -1,0 +1,992 @@
+
+
+
+
+// General
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: @bodycolor;
+    font-family: @poppins;
+}
+
+.main_container{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menuicon{
+    display: none;
+    
+}
+
+
+
+@import 'vars.less';
+@import 'header.less';
+@import 'main.less';
+@import 'skills.less';
+@import 'about.less';
+@import 'pricing.less';
+@import 'contact.less';
+@import 'footer.less';
+
+
+
+@media (max-width: 992px){
+    .main_container{
+        max-width: 992px;
+        width: 100%;
+    }
+
+    .logo{
+        font-size: 30px;
+        margin: 30px;
+    }
+
+    .menu{
+        &a{
+            font-size: 16px;
+        }
+
+        &li + li{
+            margin-left: 32px;
+        }
+
+        & li:nth-child(4){
+            margin-left: 48px;
+        }
+    }
+
+    #header_btn{
+        font-size: 18px;
+        padding: 12px 40px;
+        margin: 25px 31px;
+    }
+
+    .starting{
+        margin: 81px 29px;
+
+        & img{
+            width: 58.71px;
+            height: 58.71px;
+            left: 300px;
+        }
+
+        & h1{
+            font-size: 48px;
+            line-height: 64px;
+        }
+
+        & span{
+            font-size: 20px;
+            margin-top: 27px;
+        }
+    }
+
+    #started_btn{
+        font-size: 24px;
+        padding: 22px 79px;
+        border-radius: @brradius;
+        margin-top: 33px;
+    }
+
+    .learn_image img{
+        width: 100%;
+    }
+
+    .skills h1{
+        font-size: 36px;
+    }
+
+    .wrapper{
+        margin-top: 72px;
+        grid-template-columns: repeat(3, 303px);
+        grid-column-gap: 13px;
+        grid-row-gap: 13px;
+    }
+
+    .box_speak,
+    .box_write,
+    .box_read,
+    .box_listen{
+        padding-left: 32px;
+
+        &h3{
+            font-size: 22px;
+        }
+
+        & span{
+            font-size: 14px;
+            margin-top: 3px;
+        }
+    }
+
+    & #speak_btn{
+        padding: 16px 42px;
+        margin-top: 26px;
+        margin-bottom: 0;
+    }
+
+    .box_write img{
+        margin-left: 80px;
+    }
+
+    .btn{
+        font-size: 18px;
+    }
+
+    #writing_btn,
+    #read_btn,
+    #listen_btn{
+    padding: 16px 42px;
+    }
+    
+    .box_listen img{
+        width: 254px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+
+    .box_listen h3{
+        margin-top: 35px;
+    }
+    
+    #listen_btn{
+        margin-top: 11px;
+        margin-bottom: 34px;
+    }
+
+    .about{
+        & h1{
+            font-size: 36px;
+        }
+
+        & span{
+            font-size: 16px;
+            margin-top: 13px;
+        }
+    }
+
+    .text_about{
+        margin: 105px 31px;
+        width: 50%;
+    }
+
+    .count{
+        margin-top: 46px;
+
+        & div + div{
+            margin-left: 60px;
+        }
+    }
+
+    .pupils,
+    .teachers,
+    .language{
+        & h1{
+            font-size: 30px;
+        }
+
+        & span{
+            font-size: 16px;
+        }
+    }
+
+    .about_img img{
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .pricing h1{
+        font-size: 36px;
+    }
+
+    .pricing_grid{
+        margin: 30px;
+        grid-column-gap: 44px;
+    }
+
+    .course,
+    .classes,
+    .tuition{
+        & h2{
+            font-size: 22px;
+            margin-top: 30px;
+        }
+
+        & span{
+            font-size: 16px;
+            margin-top: 14px;
+        }
+
+        & .price{
+            margin-top: 31px;
+        }
+
+        & img{
+            width: 100%;
+        }
+    }
+
+    .classes{
+        margin-top: 80px;
+        
+    }
+
+    .price{
+        padding-left: 12px;
+
+        & h3{
+            font-size: 24px;
+        }
+
+        & p{
+            font-size: 16px;
+        }
+    }
+
+    .classes .price,
+    .tuition .price{
+        margin-top: 75px;
+    }
+
+    .contact{
+        margin: 140px 17px;
+
+        & img{
+            width: 312px;
+        }
+    }
+
+    .contact_us{
+        margin: 10px 30px;
+
+        & h1{
+            font-size: 36px;
+        }
+
+        & span{
+            font-size: 16px;
+            margin-top: 3px;
+        }
+
+        & form{
+            margin-top: 34px;
+
+            & #email{
+                width: 323px;
+                height: 60px;
+                font-size: 14px;
+            }
+
+            & #email_btn{
+                font-size: 16px;
+                padding: 21px 56px;
+            }
+        }
+    }
+
+    .footer_logo{
+        font-size: 30px;
+    }
+
+    footer{
+        height: 90px;
+    }
+
+    .footer_menu a{
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 768px){
+
+    
+
+    .main_container{
+        max-width: 767px;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .burger{
+        display: none;
+    }
+
+    .burger.active{
+        display: flex;
+        backdrop-filter: blur(15px);
+        background-color: rgba(229, 229, 229, 0.8);;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 35%;
+        height: 13%;
+        border: 1px solid @brbgcolor;
+        z-index: 2;
+    }
+
+
+    .menuicon{
+        display: inline-block;
+        background: url(../img/burger.png)no-repeat;
+        width: 30px;
+        height: 17px;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+        right: 38px;
+    
+    }
+
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50%;
+        
+
+        & li + li{
+            margin-left: 0;
+            margin-top: 10px;
+        }
+
+        & li:nth-child(4){
+            margin-left: 0;
+        }
+
+        & a{
+            font-size: 20px;
+        }
+    }
+
+    #header_btn{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    
+
+    .menuicon.active{
+        background: url(../img/menu-close.png)no-repeat center;
+        width: 30px;
+        height: 17px;
+    }
+
+    .starting{
+        margin-top: 68px;
+
+        & h1{
+            font-size: 39px;
+            line-height: 45px;
+        }
+
+        & span{
+            font-size: 16px;
+            margin-top: 25px;
+        }
+
+        & img{
+            width: 50.95px;
+            height: 50.95px;
+            left: 250px;
+            top: 70px;
+        }
+    }
+
+    #started_btn{
+        font-size: 18px;
+        padding: 19px 67px;
+    }
+
+    .learn_image img{
+        margin-top: 40px;
+    }
+
+    .skills h1{
+        font-size: 30px;
+    }
+
+    .wrapper{
+        margin-top: 37px;
+        grid-template-columns: repeat(3, 224px);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        
+    }
+
+    .box_speak,
+    .box_write,
+    .box_read,
+    .box_listen{
+        padding-left: 10px;
+        & h3{
+            font-size: 20px;
+        }
+
+        & span{
+            font-size: 13px;
+        }
+
+        & #speak_btn{
+            font-size: 16px;
+            padding: 13px 43px;
+        }
+    }
+    
+    .btn{
+        font-size: 16px;
+    }
+
+    #writing_btn,
+    #read_btn,
+    #listen_btn{
+        padding: 13px 43px;
+    }
+    
+    .box_listen img{
+        width: 204px;
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+
+    .box_listen h3{
+        margin-top: 28px;
+    }
+
+    .about{
+        & h1{
+            font-size: 30px;
+        }
+
+        & span{
+            font-size: 14px;
+            margin-top: 13px;
+        }
+    }
+    
+    .text_about{
+        margin-top: 52px;
+    }
+
+    .count{
+        margin-top: 40px;
+
+        & div + div{
+            margin-left: 40px;
+        }
+    }
+
+    .pupils,
+    .teachers,
+    .language{
+        & h1{
+            font-size: 22px;
+        }
+
+        & span{
+            font-size: 13px;
+        }
+    }
+
+    .about_img img{
+        margin-top: 0;
+    }
+
+    .pricing h1{
+        font-size: 30px;
+    }
+
+    .pricing_grid{
+        margin: 30px;
+        grid-column-gap: 35px;
+        grid-template-columns: repeat(3, 205px)
+    }
+
+    .course,
+    .classes,
+    .tuition{
+        & h2{
+            font-size: 20px;
+            margin-top: 25px;
+        }
+
+        & span{
+            font-size: 14px;
+        }
+
+        & .price{
+            margin-top: 23px;
+        }
+
+        
+    }
+
+    .classes{
+        margin-top: 55px;
+        
+    }
+
+    .price{
+        width: 205px;
+        & h3{
+            font-size: 22px;
+        }
+    }
+
+    
+    .classes .price,
+    .tuition .price{
+        margin-top: 75px;
+    }
+
+    .contact{
+        margin: 94px 17px;
+
+        & img{
+            width: 233px;
+            margin-top: 20px;
+        }
+    }
+
+
+    .contact_us{
+        margin: 10px 20px;
+
+        & h1{
+            font-size: 30px;
+        }
+
+        & span{
+            font-size: 14px;
+        }
+
+        & form{
+            
+
+            & #email{
+                width: 283px;
+                height: 50px;
+                font-size: 12px;
+            }
+
+            & #email_btn{
+                font-size: 13px;
+                padding: 15px 40px;
+            }
+        }
+    }
+
+    footer{
+        height: 80px;
+    }
+
+    .footer_menu a{
+        font-size: 13px;
+    }
+
+}
+
+
+@media (max-width: 575px){
+
+    .main_container{
+        max-width: 575px;
+    }
+
+    .burger.active{
+        width: 100%;
+    }
+
+    .menuicon{
+        width: 42.35px;
+        height: 24px;
+    }
+
+    .menuicon.active{
+        width: 42.35px;
+        height: 24px;
+    }
+
+    .menu a{
+        font-size: 30px;
+    }
+
+    .main{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .starting{
+        width: 100%;
+        align-items: center;
+
+        & h1{
+            font-size: 34px;
+        }
+
+        & span{
+            text-align: center;
+        }
+
+
+        & img{
+            display: none;
+        }
+    }
+
+    #started_btn{
+        padding: 24px 102px;
+    }
+
+    .learn_image{
+        width: 100%;
+
+        & img{
+            margin-top: 0;
+        }
+    }
+
+    .wrapper{
+        margin-top: 37px;
+        grid-template-columns: repeat(2, 240px);
+        grid-column-gap: 30px;
+        grid-row-gap: 34px;
+        
+    }
+
+    .box_speak,
+    .box_write,
+    .box_read,
+    .box_listen{
+        padding-left: 15px;
+        & h3{
+            font-size: 18px;
+        }
+
+        & span{
+            font-size: 12px;
+        }
+
+        & #speak_btn{
+            font-size: 14px;
+            padding: 13px 54px;
+        }
+    }
+
+    .box_speak{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .box_read{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-end: 4;
+
+        & #read_btn{
+            margin-top: 30px;
+        }
+
+        & h3 {
+            margin-top: 80px;
+        }
+    }
+
+    .box_listen{
+        grid-row-start: 2;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-end: 4;
+        flex-direction: column-reverse;
+    }
+
+    #writing_btn{
+        margin-top: 120px;
+    }
+
+    .box_write{
+        & img{
+            width: 100%;
+            margin-left: 0;
+        }
+
+        & h3{
+            margin-top: 30px;
+        }
+
+        & span{
+            margin-top: 10px;
+        }
+    }
+
+    .about{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .text_about{
+        width: 100%;
+        text-align: center;
+    }
+
+    .count{
+        justify-content: center;
+
+        & div + div{
+            margin-left: 80px;
+        }
+    }
+
+    .pricing_grid{
+        
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .course,
+    .classes,
+    .tuition{
+        align-items: center;
+
+        & span{
+            text-align: center;
+        }
+    }
+
+    .classes .price,
+    .tuition .price{
+        margin-top: 25px;
+    }
+
+    .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_img{
+        width: 100%;
+
+        & img{
+            width: 100%;
+        }
+    }
+
+    .contact_us{
+        align-items: center;
+
+        & span{
+            font-size: 16px;
+            text-align: center;
+        }
+
+        & form{
+            
+
+            & #email{
+                width: 511px;
+                height: 60px;
+                font-size: 13px;
+            }
+
+            & #email_btn{
+                font-size: 16px;
+                padding: 21px 56px;
+                margin-top: 20px;
+                margin-left: 150px;
+            }
+        }
+    }
+
+
+
+    
+}
+
+
+@media (max-width: 320px){
+
+    .main_container{
+        max-width: 320px;
+    }
+
+    .menuicon{
+        width: 33.53px;
+        height: 19px;
+    }
+
+    .burger.active{
+        height: 8%;
+    }
+
+    .menuicon.active{
+        width: 33.53px;
+        height: 19px;
+    }
+
+    .logo{
+        font-size: 24px;
+    }
+
+    .starting{
+
+        
+        & h1{
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+        }
+    
+        & span{
+            font-size: 14px;
+        }
+    }
+
+    #started_btn{
+        padding: 18px 99px;
+        font-size: 16px;
+    }
+
+    .skills h1{
+        font-size: 24px;
+    }
+
+    .wrapper{
+        margin-top: 37px;
+        grid-template-columns: 290px;
+        grid-column-gap: 30px;
+        grid-row-gap: 34px;
+        
+    }
+
+    .box_speak,
+    .box_write,
+    .box_read,
+    .box_listen{
+        padding-left: 15px;
+        grid-column-start: 1;
+    }
+
+    #writing_btn{
+        margin-top: 50px;
+    }
+
+    .about h1{
+        font-size: 24px;
+
+        & span{
+            font-size: 13px;
+        }
+    }
+
+    .count{
+        flex-direction: column;
+        & div + div{
+            margin-left: 0;
+            margin-top: 23px;
+        }
+    }
+
+    .pricing{
+        margin-top: 0;
+
+        & h1{
+            font-size: 24px;
+        }
+    }
+
+    .course,
+    .classes,
+    .tuition{
+        & h2{
+            font-size: 18px;
+        }
+
+        &span{
+            font-size: 13px;
+        }
+    }
+
+    .contact_us{
+
+        & h1{
+            font-size: 24px;
+        }
+
+        &span{
+            font-size: 14px;
+        }
+
+        & form{
+            
+
+            & #email{
+                width: 291px;
+                height: 50px;
+                font-size: 12px;
+            }
+
+            & #email_btn{
+                font-size: 14px;
+                padding: 20px 110px;
+                margin-top: 20px;
+                margin-left: 0;
+            }
+        }
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    .footer_logo{
+        font-size: 24px;
+    }
+
+    .footer_menu{
+        margin-top: 15px;
+        
+    
+        & a{
+            font-size: 10px;
+        }
+    
+        & li+li{
+            margin-left: 10px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
